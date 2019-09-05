@@ -1,0 +1,20 @@
+body :global {
+  @import 'sass/vendors/material-theme';
+  @import '@material/react-text-field/index.scss';
+
+  .mdc-text-field {
+    display: flex;
+  }
+  .mdc-text-field-helper-line {
+    margin-bottom: -3px; // One line: 16px instead of 19px. Yes this is a dirty HACK.
+  }
+
+  input {
+    background-color: transparent !important; // Force-disable autofill color changes
+  }
+}
+
+.TextField {
+  font-size: 100%;
+  margin-bottom: 24px;
+}

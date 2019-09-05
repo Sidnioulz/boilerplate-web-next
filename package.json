@@ -1,8 +1,8 @@
 {
-  "name": "boilerplate-web-next",
-  "version": "0.3.0",
+  "name": "socket-chat-example",
+  "version": "0.0.1",
   "private": true,
-  "description": "A boilerplate Web app based on Next.js",
+  "description": "A sample app with socket.io",
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
@@ -13,6 +13,9 @@
   "author": "Steve Dodier-Lazaro <sdodierlazaro@gmail.com>",
   "license": "gpl-3.0-or-later",
   "dependencies": {
+    "@material/react-text-field": "^0.15.0",
+    "@material/ripple": "^3.1.0",
+    "@material/theme": "^3.1.0",
     "@zeit/next-sass": "^1.0.1",
     "body-parser": "^1.19.0",
     "dotenv-load": "^2.0.0",
