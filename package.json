@@ -1,8 +1,8 @@
 {
-  "name": "web-portfolio",
-  "version": "0.2.0",
+  "name": "boilerplate-web-next",
+  "version": "0.3.0",
   "private": true,
-  "description": "A personal Web portfolio based on Next.js",
+  "description": "A boilerplate Web app based on Next.js",
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
@@ -13,9 +13,6 @@
   "author": "Steve Dodier-Lazaro <sdodierlazaro@gmail.com>",
   "license": "gpl-3.0-or-later",
   "dependencies": {
-    "@material/react-text-field": "^0.15.0",
-    "@material/ripple": "^3.1.0",
-    "@material/theme": "^3.1.0",
     "@zeit/next-sass": "^1.0.1",
     "body-parser": "^1.19.0",
     "dotenv-load": "^2.0.0",
@@ -24,10 +21,8 @@
     "http": "0.0.0",
     "https": "^1.0.0",
     "isomorphic-unfetch": "^3.0.0",
-    "moment": "^2.24.0",
     "next": "^9.0.5",
     "node-sass": "^4.12.0",
-    "nodemailer": "^6.3.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
