@@ -1,0 +1,24 @@
+@import 'sass/abstracts/mixins';
+
+/* Made with transfonter.org. */
+
+/* Below are critical fonts. The corresponding woff2 files are preloaded in pages/_document.js */
+// @include font-face(
+//   $font-family: 'FOO',
+//   $font-filename: 'Foo',
+//   $font-display: fallback,
+// );
+
+// @include font-face(
+//   $font-family: 'BAR 300',
+//   $font-filename: 'BarLight',
+//   $font-display: fallback,
+//   $font-weight: 300,
+// );
+
+/* Below are non-critical fonts. */
+// @include font-face(
+//   $font-family: 'FOO',
+//   $font-filename: 'FooBold',
+//   $font-weight: 700,
+// );

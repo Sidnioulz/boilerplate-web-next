@@ -1,0 +1,23 @@
+@import 'sass/abstracts/mixins';
+
+$colors: (
+  'Black': #030303,
+  'White': #fefefe,
+  'Grey': #888888,
+  'Red': #e93b3b,
+);
+
+@function get-color($name) {
+  @return map-get($colors, $name);
+}
+
+$semantic-colors: (
+// Change colors here
+  primary: get-color('Red'),
+  secondary: get-color('Red'),
+  danger: get-color('Red'),
+  success: get-color('Red'),
+  hard: get-color('Red'),
+  soft: get-color('Red'),
+  muted: get-color('Grey')
+);

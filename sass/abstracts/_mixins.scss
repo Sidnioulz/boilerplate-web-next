@@ -1,0 +1,27 @@
+@mixin map-to-mixin($map) {
+  @each $prop, $value in $map {
+      #{$prop}: $value;
+  }
+}
+
+@mixin font-face(
+  $font-family,
+  $font-filename,
+  $font-display: auto,
+  $font-weight: normal,
+  $font-style: normal,
+) {
+  @font-face {
+    font-family: $font-family;
+    font-display: $font-display;
+    src: url('/static/fonts/subset-#{$font-filename}.eot');
+    src: local('#{$font-family}'),
+        url('/static/fonts/subset-#{$font-filename}.eot?#iefix') format('embedded-opentype'),
+        url('/static/fonts/subset-#{$font-filename}.woff2') format('woff2'),
+        url('/static/fonts/subset-#{$font-filename}.woff') format('woff'),
+        url('/static/fonts/subset-#{$font-filename}.ttf') format('truetype'),
+        url('/static/fonts/subset-#{$font-filename}.svg##{$font-filename}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}

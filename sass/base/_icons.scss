@@ -1,0 +1,90 @@
+/* Made with SVGOMG and Fontello. */
+$icon-font-name: 'TODO' !default;
+$icon-font-hash: '58848667' !default;
+$icon-font-size: 24px !default;
+
+@font-face {
+  font-family: $icon-font-name;
+  src: url('/static/fonts/#{$icon-font-name}.eot?#{$icon-font-hash}');
+  src: url('/static/fonts/#{$icon-font-name}.eot?#{$icon-font-hash}#iefix') format('embedded-opentype'),
+       url('/static/fonts/#{$icon-font-name}.woff2?#{$icon-font-hash}') format('woff2'),
+       url('/static/fonts/#{$icon-font-name}.woff?#{$icon-font-hash}') format('woff'),
+       url('/static/fonts/#{$icon-font-name}.ttf?#{$icon-font-hash}') format('truetype'),
+       url('/static/fonts/#{$icon-font-name}.svg?#{$icon-font-hash}##{$icon-font-name}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: $icon-font-name;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  font-size: $icon-font-size;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin: 0;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:global {
+  // Add your icons here, by copy pasting from Fontello. For instance:
+  // .icon-save:before { content: '\e800'; } /* '' */
+  // .icon-download:before { content: '\e801'; } /* '' */
+}
+
+
+/* End of Fontello file. Animations below. Compose to use. */
+@keyframes translationX {
+  0% {
+    transform: translateX(-40%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(40%);
+    opacity: 0;
+  }
+}
+
+.icon-animated-translation-x {
+  &:before {
+    animation: translationX 2s linear infinite;
+    animation-delay: -1s;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.icon-animated-translation-x {
+  &:before {
+    animation: spin 2s linear infinite;
+    animation-delay: 0s;
+  }
+}

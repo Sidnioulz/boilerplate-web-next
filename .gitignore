@@ -1,0 +1,18 @@
+# Dependencies
+/node_modules
+
+# Build directory
+/.next
+
+# Directory used on server to renew Let's Encrypt certs
+/acme-challenge
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*

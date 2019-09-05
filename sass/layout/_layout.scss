@@ -1,0 +1,32 @@
+@import 'sass/main';
+
+html  {
+  font-size: 100%; // Has to be 100% for external CSS integration.
+
+  body {
+    margin: 0;
+  }
+}
+
+.Layout {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	min-height: 100%;
+
+  > .Header {
+    flex: 0 1 auto;
+  }
+
+  > .PageWrapper {
+    flex: 1 0 auto;
+
+    > * {
+      padding: 0 80px;
+    }
+  }
+
+  > .Footer {
+    flex: 0 0 auto;
+  }
+}

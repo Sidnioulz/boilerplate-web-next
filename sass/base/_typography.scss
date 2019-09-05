@@ -1,0 +1,19 @@
+@import 'sass/abstracts/mixins';
+@import 'sass/base/color';
+@import 'sass/base/fonts';
+
+$typography-EXAMPLE-map: (
+  color: get-color('Red'),
+  font-family: sans-serif,
+  font-size: 18px,
+  font-style: normal,
+  font-weight: 500,
+  line-height: 1.25,
+  text-transform: none,
+);
+@mixin typography-EXAMPLE($color: null) {
+  @include map-to-mixin($typography-EXAMPLE-map);
+  @if $color != null {
+    color: $color !important;
+  }
+};
