@@ -1,0 +1,126 @@
+@import "sass/base/typography";
+
+$button-background-color: transparent !default;
+$button-color: get-color('Black') !default;
+$button-border-color: get-color('Red') !default;
+$button-border-width: 1px !default;
+$button-border-radius: 2px !default;
+$button-border-style: solid !default;
+$button-padding: 6px !default;
+$button-inner-spacing: 6px !default;
+$button-hover-color: get-color('Black') !default;
+$button-hover-background-color: get-color('Red') !default;
+$button-hover-border-color: get-color('Black') !default;
+$button-active-color: get-color('Red') !default;
+$button-active-background-color: mix(get-color('Red'), get-color('White'), 50%) !default;
+$button-active-border-color: get-color('Red') !default;
+$button-disabled-color: get-color('Grey') !default;
+$button-disabled-text-opacity: 0.7 !default;
+$button-disabled-background-color: mix(white, get-color('Grey'), 50%) !default;
+$button-disabled-border-color: rgba(get-color('Grey'), 0.2) !default;
+
+.Tooltip {
+  composes: Tooltip from './Tooltip.scss';
+  min-width: 100%; // Proper solution would be a tooltip len prop.
+}
+
+.Button {
+  composes: TooltipContainer from './Tooltip.scss';
+
+  cursor: pointer;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  border-width: $button-border-width;
+  border-style: $button-border-style;
+  border-color: $button-border-color;
+  border-radius: $button-border-radius;
+  padding: $button-padding;
+
+  background-color: $button-background-color;
+
+  transition:
+    background-color 200ms cubic-bezier(.4, 0, .2, 1),
+    border-color 200ms cubic-bezier(.4, 0, .2, 1);
+
+  &.ButtonNoText {
+    width: 24px;
+    height: 24px;
+    border-width: 0;
+    padding: 0;
+
+    .ButtonIcon {
+      flex: 1 0 auto !important;
+    }
+  }
+
+  &.ButtonSmall {
+      .ButtonIcon {
+        width: 16px;
+        &:before {
+          font-size: 16px;
+        }
+      }
+
+      .ButtonInner {
+        @include typography-body-text-m($button-color);
+      }
+  }
+
+  .ButtonIcon + .ButtonInner {
+    margin-left: $button-inner-spacing;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+      .ButtonIcon,
+      .ButtonInner {
+        color: $button-hover-color;
+      }
+    background-color: $button-hover-background-color;
+    border-color: $button-hover-border-color;
+  }
+
+  &:active:not(:disabled) {
+      .ButtonIcon,
+      .ButtonInner {
+        color: $button-active-color;
+      }
+    background-color: $button-active-background-color;
+    border-color: $button-active-border-color;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    .ButtonIcon,
+    .ButtonInner {
+      color: $button-disabled-color;
+      opacity: $button-disabled-text-opacity;
+    }
+    background-color: $button-disabled-background-color;
+    border-color: $button-disabled-border-color;
+  }
+}
+
+.ButtonIcon {
+  flex: 0 0 auto;
+  &:before {
+    color: $button-color;
+  }
+}
+
+.ButtonIconAnimated {
+  composes: icon-animated-translation-x from '../base/_icons.scss';
+}
+
+.ButtonInner {
+  flex: 1 0 auto;
+  color: $button-color;
+  @include typography-body-lead($button-color);
+}

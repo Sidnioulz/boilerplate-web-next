@@ -1,0 +1,25 @@
+@import 'sass/base';
+
+.Label {
+  border-width: 5px 0 0;
+  border-style: dotted;
+  padding-top: 6px;
+
+  // TODO typography
+}
+
+.SubmittedLabel {
+  composes: Label;
+  color: get-color('');
+  border-color: get-color('Grey');
+}
+
+.ErrorLabel {
+  composes: Label;
+  color: get-color('Red');
+  border-color: get-color('Red');
+
+  a {
+    // TODO typography
+  }
+}

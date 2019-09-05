@@ -1,0 +1,17 @@
+@import "sass/color";
+
+.Toolbar {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: flex-end;
+
+  > :not(:first-child) {
+    margin-left: 6px;
+  }
+}
+
+.ToolbarSpacing {
+    flex: 1 0 auto;
+}

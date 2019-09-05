@@ -1,0 +1,40 @@
+@import 'sass/base';
+
+.Header {
+  align-items: top;
+	display: flex;
+	flex-flow: row nowrap;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 0 18px;
+  min-height: 114px; // prevents FOUC on nav height and page-wrapper content position.
+	width: 100vw;
+
+
+  > .logoContainer {
+    flex: 0 0 auto;
+    margin: 6px 40px;
+    padding: 0;
+
+    img {
+      height: 102px;
+    }
+  }
+
+  > nav {
+	  display: flex;
+    flex: 1 0 auto;
+  	flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-top: 76px;
+    margin-right: 80px;
+
+    a {
+      // Typography here
+    }
+
+    a + a {
+      margin-left: 0.75em;
+    }
+  }
+}

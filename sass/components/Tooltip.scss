@@ -1,0 +1,45 @@
+@import "sass/base/color";
+
+.TooltipContainer {
+  position: relative;
+
+  &:hover .Tooltip {
+    visibility: visible;
+    opacity: 1;
+    transition:
+      opacity 100ms cubic-bezier(0.0, 0.0, 0.2, 1),
+      visibility 100ms cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+}
+
+.Tooltip {
+  visibility: hidden;
+  background-color: get-color('Black');
+  color: get-color('White');
+  text-align: center;
+  border-radius: 3px;
+  padding: 6px;
+  position: absolute;
+  left: 110%;
+  top: 0;
+
+  z-index: 1;
+  opacity: 0;
+  margin-top: -3px;
+  margin-left: 6px;
+  transition:
+    opacity 200ms cubic-bezier(0.4, 0.0, 1, 1),
+    visibility 200ms cubic-bezier(0.4, 0.0, 1, 1);
+
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent get-color('Black') transparent transparent;
+  }
+}
