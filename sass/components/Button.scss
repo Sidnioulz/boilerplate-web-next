@@ -64,7 +64,7 @@ $button-disabled-border-color: rgba(get-color('Grey'), 0.2) !default;
       }
 
       .ButtonInner {
-        @include typography-body-text-m($button-color);
+        // TODO typography
       }
   }
 
