@@ -122,5 +122,5 @@ $button-disabled-border-color: rgba(get-color('Grey'), 0.2) !default;
 .ButtonInner {
   flex: 1 0 auto;
   color: $button-color;
-  @include typography-body-lead($button-color);
+  // TODO typography
 }
