@@ -13,8 +13,10 @@ class Form extends React.Component {
       submitted: false,
       submitting: false,
     };
-    props.children.filter(child => child.name).forEach((child) => {
-      this.state[`field-${child.name}`] = child.value || null;
+    React.Children.forEach(props.children, (child) => {
+      if (child.name) {
+        this.state[`field-${child.name}`] = child.value || null;
+      }
     });
 
     this.onSubmit = this.onSubmit.bind(this);
