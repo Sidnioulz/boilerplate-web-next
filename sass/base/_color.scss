@@ -3,7 +3,10 @@
 $colors: (
   'Black': #030303,
   'White': #fefefe,
+  'Dark': #444444,
   'Grey': #888888,
+  'Lime': #77ff00,
+  'Lemon': #f7ff00,
   'Red': #e93b3b,
 );
 
@@ -12,12 +15,15 @@ $colors: (
 }
 
 $semantic-colors: (
-// Change colors here
-  primary: get-color('Red'),
-  secondary: get-color('Red'),
+  primary: get-color('Lime'),
+  secondary: get-color('Lemon'),
   danger: get-color('Red'),
-  success: get-color('Red'),
-  hard: get-color('Red'),
-  soft: get-color('Red'),
+  success: get-color('Green'),
+  hard: get-color('Black'),
+  soft: get-color('Dark'),
   muted: get-color('Grey')
 );
+
+@function get-semantic-color($name) {
+  @return map-get($semantic-colors, $name);
+}

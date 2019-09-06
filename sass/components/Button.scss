@@ -1,19 +1,19 @@
 @import "sass/base/typography";
 
-$button-background-color: transparent !default;
-$button-color: get-color('Black') !default;
-$button-border-color: get-color('Red') !default;
+$button-background-color: get-semantic-color('primary') !default;
+$button-color: get-semantic-color('hard') !default;
+$button-border-color: get-semantic-color('hard') !default;
 $button-border-width: 1px !default;
 $button-border-radius: 2px !default;
 $button-border-style: solid !default;
 $button-padding: 6px !default;
 $button-inner-spacing: 6px !default;
-$button-hover-color: get-color('Black') !default;
-$button-hover-background-color: get-color('Red') !default;
-$button-hover-border-color: get-color('Black') !default;
-$button-active-color: get-color('Red') !default;
-$button-active-background-color: mix(get-color('Red'), get-color('White'), 50%) !default;
-$button-active-border-color: get-color('Red') !default;
+$button-hover-color: get-semantic-color('soft') !default;
+$button-hover-background-color: get-semantic-color('secondary') !default;
+$button-hover-border-color: get-semantic-color('soft') !default;
+$button-active-color: get-semantic-color('hard') !default;
+$button-active-background-color: get-color('White') !default;
+$button-active-border-color: get-semantic-color('hard') !default;
 $button-disabled-color: get-color('Grey') !default;
 $button-disabled-text-opacity: 0.7 !default;
 $button-disabled-background-color: mix(white, get-color('Grey'), 50%) !default;
