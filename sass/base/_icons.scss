@@ -1,5 +1,5 @@
 /* Made with SVGOMG and Fontello. */
-$icon-font-name: 'TODO' !default;
+$icon-font-name: 'icons' !default;
 $icon-font-hash: '58848667' !default;
 $icon-font-size: 24px !default;
 
@@ -41,9 +41,12 @@ $icon-font-size: 24px !default;
 }
 
 :global {
-  // Add your icons here, by copy pasting from Fontello. For instance:
-  // .icon-save:before { content: '\e800'; } /* '' */
-  // .icon-download:before { content: '\e801'; } /* '' */
+  .icon-send:before { content: '\e800'; } /* '' */
+  .icon-download:before { content: '\e801'; } /* '' */
+  .icon-video:before { content: '\e802'; } /* '' */
+  .icon-quote:before { content: '\e803'; } /* '' */
+  .icon-copy:before { content: '\e805'; } /* '' */
+  .icon-close:before { content: '\e806'; } /* '' */
 }
 
 
@@ -82,7 +85,7 @@ $icon-font-size: 24px !default;
   }
 }
 
-.icon-animated-translation-x {
+.icon-animated-spin {
   &:before {
     animation: spin 2s linear infinite;
     animation-delay: 0s;

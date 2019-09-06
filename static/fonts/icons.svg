@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="portfolio" horiz-adv-x="1000" >
+<font-face font-family="portfolio" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="send" unicode="&#xe800;" d="M171 358l-57 398 813-406-813-406 57 398 32 8-32 8z m48 253l27-186 301-75-301-75-27-185 521 260-521 261z" horiz-adv-x="1000" />
+
+<glyph glyph-name="download" unicode="&#xe801;" d="M917 183l0-166c0-46-38-84-84-84l-666 0c-46 0-84 38-84 84l0 166 84 0 0-166 666 0 0 166 84 0z m-375 143l137 137 59-59-238-238-238 238 59 59 137-137 0 441 84 0 0-441z" horiz-adv-x="1000" />
+
+<glyph glyph-name="video" unicode="&#xe802;" d="M708 501l250 125 0-552-250 125 0-57c0-46-37-84-83-84l-500 0c-46 0-83 38-83 84l0 416c0 46 37 84 83 84l500 0c46 0 83-38 83-84l0-57z m0-93l0-116 167-83 0 282-167-83z m-583 150l0-416 500 0 0 416-500 0z" horiz-adv-x="1000" />
+
+<glyph glyph-name="quote" unicode="&#xe803;" d="M299 142c21 0 41 12 50 31l59 118c6 12 9 24 9 37v189c0 23-19 41-42 41h-167c-23 0-41-18-41-41v-167c0-23 18-42 41-42h84l-43-85c-19-38 8-81 50-81z m416 0c22 0 41 12 50 31l60 118c5 12 8 24 8 37v189c0 23-18 41-41 41h-167c-23 0-42-18-42-41v-167c0-23 19-42 42-42h83l-43-85c-18-38 9-81 50-81z" horiz-adv-x="1000" />
+
+<glyph glyph-name="copy" unicode="&#xe805;" d="M667 183l0-166c0-48-36-84-84-84l-416 0c-48 0-84 36-84 84l0 416c0 48 36 84 84 84l166 0 0 166c0 48 36 84 84 84l416 0c48 0 84-36 84-84l0-416c0-48-36-84-84-84l-166 0z m-84 0l-166 0c-48 0-84 36-84 84l0 166-166 0 0-416 416 0 0 166z m-166 500l0-416 416 0 0 416-416 0z" horiz-adv-x="1000" />
+
+<glyph glyph-name="close" unicode="&#xe806;" d="M763 612c-17 16-43 16-59 0l-204-203-204 204c-16 16-42 16-58 0-17-17-17-43 0-59l203-204-203-204c-17-16-17-42 0-58 16-17 42-17 58 0l204 203 204-203c16-17 42-17 59 0 16 16 16 42 0 58l-204 204 204 204c15 16 15 42 0 58z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

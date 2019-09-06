@@ -111,7 +111,7 @@ $button-disabled-border-color: rgba(get-color('Grey'), 0.2) !default;
 .ButtonIcon {
   flex: 0 0 auto;
   &:before {
-    color: $button-color;
+    // color: $button-color;
   }
 }
 
