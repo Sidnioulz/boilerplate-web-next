@@ -7,15 +7,14 @@
   "scripts": {
     "dev": "nodemon server.js",
     "build": "next build",
+    "test:unit": "jest",
+    "tdd": "jest --watchAll",
     "start": "cross-env NODE_ENV=production node server.js"
   },
   "keywords": [],
   "author": "Steve Dodier-Lazaro <sdodierlazaro@gmail.com>",
   "license": "gpl-3.0-or-later",
   "dependencies": {
-    "@material/react-text-field": "^0.15.0",
-    "@material/ripple": "^3.1.0",
-    "@material/theme": "^3.1.0",
     "@zeit/next-sass": "^1.0.1",
     "body-parser": "^1.19.0",
     "dotenv-load": "^2.0.0",
@@ -44,12 +43,26 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-jsx-remove-data-test-id": "^2.0.0",
+    "babel-plugin-react-require": "^3.1.1",
     "cross-env": "^5.2.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "nodemon": "^1.19.2"
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "jest-webpack-resolver": "^0.3.0",
+    "nodemon": "^1.19.2",
+    "react-test-renderer": "^16.9.0"
   }
 }

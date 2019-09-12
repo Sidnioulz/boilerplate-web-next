@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:import/warnings",
+    "plugin:jest/recommended"
+  ],
+  "plugins": [
+    "import",
+    "jsx-a11y",
+    "jest"
+  ],
+  "globals": {
+    "document": true,
+    "window": true,
+    "process": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "."
+        ]
+      }
+    },
+  },
+  "rules": {
+    "func-names": ["error", "never"], # personal preference
+    "react/destructuring-assignment": ["error", "never"], # personal preference
+    "jsx-a11y/anchor-is-valid": 0, # Next.JS uses Link for href
+    "react/react-in-jsx-scope": 0, # Next.JS injects deps
+    "react/prop-types": [2, { ignore: ["className", "children"] }],
+    "react/button-has-type": [0], # Handled via PropTypes
+    "react/jsx-filename-extension": [0] # Disabled for test files
+  }
+}
