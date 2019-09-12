@@ -2,7 +2,7 @@ import css from 'sass/components/Form.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Toolbar, ToolbarSpacing } from 'components/Toolbar';
-import asyncState from 'services/AsyncState';
+import asyncState from 'util/AsyncState';
 
 class Form extends React.Component {
   constructor(props) {
