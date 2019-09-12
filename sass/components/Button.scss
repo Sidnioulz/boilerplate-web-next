@@ -115,8 +115,12 @@ $button-disabled-border-color: rgba(get-color('Grey'), 0.2) !default;
   }
 }
 
-.ButtonIconAnimated {
+.ButtonIconAnimated__slideX {
   composes: icon-animated-translation-x from '../base/_icons.scss';
+}
+
+.ButtonIconAnimated__spin {
+  composes: icon-animated-spin from '../base/_icons.scss';
 }
 
 .ButtonInner {
