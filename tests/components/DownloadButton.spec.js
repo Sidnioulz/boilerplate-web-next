@@ -1,5 +1,5 @@
 import DownloadButton from 'components/DownloadButton';
-import { shallow, mount, render } from 'enzyme';
+import { mount } from 'enzyme';
 
 let reusableButton = null;
 const reusableButtonProps = {
